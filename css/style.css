@@ -1,0 +1,222 @@
+:root {
+    --primary-color: #1d1148;
+    --white-color: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+    background-color: #f7f7f9;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+article,
+.cards,
+ol,
+table,
+form {
+    margin-bottom: 40px;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--white-color);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Highlight Styles */
+article {
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 20px 40px;
+}
+
+article h1 {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+article p {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.btn-highlight {
+    margin: 12px 0 36px 0;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+/* Button Styles */
+.btn,
+.btn-highlight,
+.btn-form {
+    background-color: #e40084;
+    color: var(--white-color);
+    border: none;
+    border-radius: 45px;
+    font-weight: bold;
+}
+
+a:hover,
+button:hover {
+    color: #b8006a;
+}
+
+/* Animals for Adoption Styles */
+.cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card, 
+.card-new {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 16px;
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-new {
+    position: relative;
+}
+
+.card img, 
+.card-new img {
+    width: 262px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card h3,
+.card p,
+.card-new h3,
+.card-new p {
+    margin: 10px 0 5px 0;
+}
+
+.card-new .stamp {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    background-color: #e40084;
+    color: var(--white-color);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* How to Adopt Styles */
+ol {
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Visiting Hours Styles */
+table {
+    max-width: 500px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px 8px 8px 16px;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: left;
+}
+
+/* Contact Styles */
+form {
+    background-color: var(--white-color);
+    border-radius: 22px;
+    padding: 18px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 1px 0;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.btn-form {
+    margin-top: 12px;
+    padding: 8px 24px;
+    font-size: 16px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+}
